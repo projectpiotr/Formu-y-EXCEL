@@ -1,0 +1,14 @@
+B2 - podajemy fragment i szukamy.
+
+W kolumnie A od 4 wiersza liczba porządkowa
+
+Szukanie podobnych wartości wklej do komórki B i przeciągnij w dół. Zacznij w wierszu 4
+=JEŻELI.BŁĄD(WYSZUKAJ.PIONOWO(A4;$C$4:$E$300000;3;0);"")
+
+Kolumna C od czwartego wiersza
+=JEŻELI.BŁĄD(POZYCJA(D4;$D$4:$D$300000;1);"")
+
+kolumna D od czwartego wierwsza
+=JEŻELI.BŁĄD(SZUKAJ.TEKST($B$2;E4)+WIERSZ()/100000;"")
+
+W kolumnie E baza do poszukiwań. 3 Wiersza nagłówek + od 4 baza
