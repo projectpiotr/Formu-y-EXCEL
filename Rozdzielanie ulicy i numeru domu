@@ -1,0 +1,13 @@
+Rozdzielanie ulicy z numerem domu do dwóch różnych komórek
+
+Kolumna C podajemy ulicę z numerem domu
+Kolumna D
+=USUŃ.ZBĘDNE.ODSTĘPY(LEWY(C2;JEŻELI(TYP(WARTOŚĆ(FRAGMENT.TEKSTU(C2;ZNAJDŹ(" ";C2)+1;1)))=1;ZNAJDŹ(" ";C2);ZNAJDŹ(" ";C2;ZNAJDŹ(" ";C2)+1))))
+Kolumna E
+=USUŃ.ZBĘDNE.ODSTĘPY(PRAWY(C2;DŁ(C2)-JEŻELI(TYP(WARTOŚĆ(FRAGMENT.TEKSTU(C2;ZNAJDŹ(" ";C2)+1;1)))=1;ZNAJDŹ(" ";C2);ZNAJDŹ(" ";C2;ZNAJDŹ(" ";C2)+1))))
+Kolumna F
+=USUŃ.ZBĘDNE.ODSTĘPY(LEWY(E2;JEŻELI(TYP(WARTOŚĆ(FRAGMENT.TEKSTU(E2;ZNAJDŹ(" ";E2)+1;1)))=1;ZNAJDŹ(" ";E2);ZNAJDŹ(" ";E2;ZNAJDŹ(" ";E2)+1))))
+Kolumna G
+=USUŃ.ZBĘDNE.ODSTĘPY(PRAWY(E2;DŁ(E2)-JEŻELI(TYP(WARTOŚĆ(FRAGMENT.TEKSTU(E2;ZNAJDŹ(" ";E2)+1;1)))=1;ZNAJDŹ(" ";E2);ZNAJDŹ(" ";E2;ZNAJDŹ(" ";E2)+1))))
+
+Wyniki analizuje.
